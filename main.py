@@ -17,7 +17,7 @@ def start(message):
 @bot.message_handler()
 def translate(message):
     translation = translator.translate(message.text)
-    bot.send_message(chat_id=message.chat.id,text=translation.text)
+    bot.send_message(chat_id=message.chat.id,text=translation.text )
 
 
 
